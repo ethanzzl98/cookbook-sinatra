@@ -1,0 +1,13 @@
+html, body {
+  background-color: bisque;
+}
+
+.red {
+  color: red;
+  background-color: white;
+}
+
+input {
+  background-color: aliceblue;
+  display: block;
+}

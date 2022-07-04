@@ -1,0 +1,17 @@
+
+
+<dl>
+  <% @cookbook.all.each_with_index() do |recipe, index| %>
+    <dt>
+      <%= recipe.name %>
+    </dt>
+    <dl>
+      <%= recipe.description %>
+      <br>
+      <%= "(Rating:#{recipe.rating}/5)"%>
+      <%="<a href='/delete?index=#{index}'>delete</a>"%>
+    </dl>
+  <% end %>
+</dl>
+
+<a href="./new">Add new recipe</a>
